@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Express Passport Maltiple Auth With Passport</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="logged_user_area">
+    <%if(currentUser){%>
+    <h1>Current Logged User</h1>
+    <h3><%=currentUser.username %></h3>
+    <img class="avatar" src="<%=currentUser.avatar %>" alt="" srcset="">
+    <a class="logout_link" href="/api/logout">Log Out</a>
+
+    <p>Get Current User Json Data</p>
+    <a href="/api/currentUser">Current user</a>
+    <%} else {%>
+    <h1>No User Logged In Yet.</h1>
+    <h2>Please Log in Here</h2>
+
+    <a class="link" href="/auth/google">
+      <div class="google-sign-in">
+        <div class="logo">
+          <img src="/logo/google.svg" alt="google_logo">
+        </div>
+        <span class="label">Sign In with Google</span>
+      </div>
+    </a>
+
+    <a class="link" href="/auth/facebook">
+      <div class="facebook-sign-in">
+        <div class="logo">
+          <img src="/logo/facebook.svg" alt="facebook_logo">
+        </div>
+        <span class="label">Sign In with Facebook</span>
+      </div>
+    </a>
+    <% } %>
+  </div>
+
+</body>
+
+</html>

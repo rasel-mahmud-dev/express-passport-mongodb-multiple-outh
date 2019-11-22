@@ -1,0 +1,62 @@
+body {
+  background: linear-gradient(45deg, #b4ffa2, #f4d4cf);
+  background-size: cover;
+  font-family: roboto slab;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.google-sign-in,
+.facebook-sign-in {
+  background-color: #fff;
+  font-family: roboto;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(255, 255, 255);
+  width: 200px;
+  padding: 5px 10px;
+  box-shadow: 0px 1px 3px 0px #8e8a8a;
+  font-weight: 700;
+  color: #656565;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.google-sign-in .logo,
+.facebook-sign-in .logo {
+  width: 25px
+}
+
+.google-sign-in .logo img,
+.facebook-sign-in .logo img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+
+.logged_user_area {
+  text-align: center;
+}
+
+.avatar {
+  width: 100px;
+  border: 1px solid #f0dada;
+  box-shadow: 0px 0px 5px 0px black;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+}
+
+.logout_link {
+  text-align: center;
+  margin: 10px 0;
+  display: inline-block;
+  text-decoration: none;
+}
